@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Dictionary",
+  "version": "1.0",
+  "description": "Get quick definitions by double-clicking or highlighting words.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.dictionaryapi.dev/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": { 
+    "16": "icons/icon16.png",
+    "48": "icons/icon32.png",
+    "128": "icons/icon128.png"
+  }
+}
